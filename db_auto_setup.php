@@ -14,7 +14,7 @@ echo "✅ Επιτυχής σύνδεση!<br>";
 
 $sql_players = "CREATE TABLE IF NOT EXISTS players (
     player_id INT AUTO_INCREMENT PRIMARY KEY,
-    token VARCHAR(32) NOT NULL UNIQUE,
+    token VARCHAR(32) NOT NULL UNIQUE,  
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;";
 
