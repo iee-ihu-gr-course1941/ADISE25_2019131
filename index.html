@@ -271,8 +271,12 @@
   </div>
 
 <script>
-  // 🔧 ΒΑΛΕ ΕΔΩ ΤΟ ΣΩΣΤΟ PATH ΣΟΥ
-  const BASE_URL = "http://127.0.0.1/project_ADISE/ADISE25_2019131/api.php";
+  // ✅ AUTO: δουλεύει και στο users και τοπικά
+  const BASE_URL =
+    (location.hostname === "users.iee.ihu.gr")
+      ? "https://users.iee.ihu.gr/~iee2019131/ADISE25_2019131/api.php"
+      : "http://127.0.0.1/project_ADISE/ADISE25_2019131/api.php";
+
   $("#apiUrlBox").text(BASE_URL);
 
   let LAST = null;
@@ -484,6 +488,8 @@
 </script>
 </body>
 </html>
+
+
 
 
 
